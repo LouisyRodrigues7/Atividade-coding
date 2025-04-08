@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/abrir_navegador" />
-    <!-- EditText adicionado para digitar o número de telefone -->
+
     <EditText
         android:id="@+id/edtPhoneNumber"
         android:layout_width="match_parent"
