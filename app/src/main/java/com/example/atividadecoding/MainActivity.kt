@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         // Botão "Enviar SMS"
         val btnSendSMS = findViewById<Button>(R.id.btnSendSMS)
         btnSendSMS.setOnClickListener {
-            val smsNumber = "81998486942" // número de exemplo com DDD
+            val smsNumber = "81998486942"
             val smsText = "Olá! Essa é uma mensagem enviada pelo app :)"
             val smsIntent = Intent(Intent.ACTION_SENDTO).apply {
                 data = "sms:$smsNumber".toUri()
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         btnOpenMap.setOnClickListener {
             val locationUri = "geo:-8.0476,-34.8770?q=Recife, Brasil".toUri()
             val mapIntent = Intent(Intent.ACTION_VIEW, locationUri)
-            mapIntent.setPackage("com.google.android.apps.maps") // Garante que vai abrir no Google Maps, se instalado
+            mapIntent.setPackage("com.google.android.apps.maps")
             startActivity(mapIntent)
         }
         // Botão "Compartilhar Texto"
