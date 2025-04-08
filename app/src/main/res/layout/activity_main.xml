@@ -1,19 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnOpenBrowser"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/abrir_navegador" />
+    <!-- EditText adicionado para digitar o número de telefone -->
+    <EditText
+        android:id="@+id/edtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_o_n_mero_de_telefone"
+        android:inputType="phone"
+        android:layout_marginTop="16dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btnMakeCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fazer_liga_o" />
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar_sms" />
+
+    <Button
+        android:id="@+id/btnOpenMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/abrir_mapa" />
+
+    <Button
+        android:id="@+id/btnShareText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/compartilhar_texto" />
+
+</LinearLayout>
