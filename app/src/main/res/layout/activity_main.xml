@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- android:orientation="vertical" Os elementos filhos como botoes e textos ficarão empilhados verticalmente
+android:padding="16dp" define espaço interno em todos os lados
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -6,43 +9,71 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center_vertical">
+    <!-- layout_width = largura
+     layout_height = altura-->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/teste_de_tela"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnOpenBrowser"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/abrir_navegador" />
-
-    <EditText
-        android:id="@+id/edtPhoneNumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/digite_o_n_mero_de_telefone"
-        android:inputType="phone"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/btnMakeCall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/fazer_liga_o" />
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/abrir_navegador"
+        android:backgroundTint="#FF1565C0"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btnSendSMS"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/enviar_sms" />
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/enviar_sms"
+        android:backgroundTint="#FF1565C0"
+        android:textColor="#FFFFFF"/>
 
     <Button
         android:id="@+id/btnOpenMap"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/abrir_mapa" />
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/abrir_mapa"
+        android:backgroundTint="#FF1565C0"
+        android:textColor="#FFFFFF"/>
 
     <Button
         android:id="@+id/btnShareText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/compartilhar_texto" />
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/compartilhar_texto"
+        android:backgroundTint="#FF1565C0"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:id="@+id/btnMakeCall"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/fazer_liga_o"
+        android:backgroundTint="#FF1565C0"
+        android:textColor="#FFFFFF"/>
+    <EditText
+        android:id="@+id/edtPhoneNumber"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:autofillHints=""
+        android:hint="@string/digite_o_n_mero_de_telefone"
+        android:inputType="phone"
+        android:layout_marginTop="16dp"
+        />
+
 
 </LinearLayout>
